@@ -3,7 +3,7 @@ const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia0
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: '请登录您的信息',
     userInfo: {
       avatarUrl: defaultAvatarUrl,
       nickName: '',
@@ -14,7 +14,7 @@ Page({
   },
   bindViewTap() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../main/main'
     })
   },
   onChooseAvatar(e) {
@@ -46,4 +46,12 @@ Page({
       }
     })
   },
+  onShow: function () {
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 1  //是你想显示标亮的导航按钮的下标
+      })
+    }
+},
 })

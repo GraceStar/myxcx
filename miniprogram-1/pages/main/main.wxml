@@ -1,0 +1,8 @@
+<!--pages/main/main.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+<view class="intro">
+你有毛病啊
+</view>
+<tabBar id="tabbar" active="1"></tabBar>
+  
+</scroll-view>

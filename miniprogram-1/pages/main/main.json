@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tabBar": "/custom-tab-bar/index"
+  },
+  "navigationBarTitleText": "主页"
+}
