@@ -13,6 +13,7 @@ Page({
     canIUseNicknameComp: wx.canIUse('input.type.nickname'),
   },
   bindViewTap() {
+    //进入主页
     wx.navigateTo({
       url: '../main/main'
     })

@@ -12,19 +12,19 @@ Component({
     color: "#7A7E83",
     selectedColor: "#3cc51f",
     list: [{
-      pagePath: "pages/logs/logs",
+      pagePath: "/pages/bodyRecord/bodyRecord",
       iconPath: "/image/icon_component.png",
       selectedIconPath: "/image/icon_component_HL.png",
       text: "身体"
     }, {
-      pagePath: "pages/exerciseRecord/exerciseRecord",
+      pagePath: "/pages/exerciseRecord/exerciseRecord",
       iconPath: "/image/icon_API.png",
       selectedIconPath: "/image/icon_API_HL.png",
       text: "运动",
     }, {
-      pagePath: "pages/mine/mine",
-      iconPath: "/image/icon_API.png",
-      selectedIconPath: "/image/icon_API_HL.png",
+      pagePath: "/pages/mine/mine",
+      iconPath: "/image/icon_user.png",
+      selectedIconPath: "/image/icon_user_HL.png",
       text: "我的",
     }]
   },
@@ -41,11 +41,14 @@ Component({
       })
     },
     run() {
-      console.log(this.data.active);      
+      console.log("hahahaha" + this.data.active);  
+      const url = this.data.list[this.data.active].pagePath;
+      console.log("run url:"+url);
+      wx.switchTab({url});  
       this.setData({
           // 通过this.data获取父组件里传过来的值
           show: true,
-          selected: this.data.active
+          selected:  this.data.active
       });
       console.log(this.data.selected);
     }

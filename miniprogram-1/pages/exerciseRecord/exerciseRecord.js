@@ -1,10 +1,12 @@
 Component({
   pageLifetimes: {
     show() {
-      if (typeof this.getTabBar === 'function' &&
-        this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 0
+      if (typeof this.getTabBar === 'function') {
+        this.getTabBar((tabBar) => {
+          tabBar.setData({
+            show: true,
+            selected: 1
+          })
         })
       }
     }

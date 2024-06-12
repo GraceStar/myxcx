@@ -1,2 +1,2 @@
 <!--pages/exerciseRecord/exerciseRecord.wxml-->
-<text>exerciserecord</text>
+<view class="intro">exerciserecord</view>

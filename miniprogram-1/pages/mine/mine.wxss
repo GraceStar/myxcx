@@ -1,1 +1,6 @@
 /* pages/mine/mine.wxss */
+.intro {
+  margin: 30px;
+  text-align: center;
+  padding-top: 60px
+}
