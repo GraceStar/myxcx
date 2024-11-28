@@ -3,25 +3,7 @@
   "projectname": "miniprogram-1",
   "setting": {
     "compileHotReLoad": true
-  },
-  "condition": {
-    "miniprogram": {
-      "list": [
-        {
-          "name": "pages/main/main",
-          "pathName": "pages/main/main",
-          "query": "",
           "launchMode": "default",
           "scene": null
-        },
-        {
-          "name": "pages/bodyRecord/bodyRecord",
-          "pathName": "pages/bodyRecord/bodyRecord",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        }
-      ]
-    }
   }
 }

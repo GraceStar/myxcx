@@ -3,19 +3,13 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/main/main",
-    "pages/bodyRecord/bodyRecord",
-    "pages/exerciseRecord/exerciseRecord",
-    "pages/mine/mine"
+    "pages/todos/todos",
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "减脂营",
     "navigationBarBackgroundColor": "#ffffff"
   },
-  "style": "v2",
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents",
   "debug": true,
   "tabBar": {
     "custom": true,
@@ -34,15 +28,18 @@
         "text": "运动",
         "iconPath": "/image/icon_API.png",
         "selectedIconPath": "/image/icon_API.png"
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/jilu.png",
+        "selectedIconPath": "image/jilu2.png",
       },
       {
-        "current": 2,
-        "pagePath": "pages/mine/mine",
-        "text": "我的",
-        "iconPath": "/image/icon_user.png",
-        "selectedIconPath": "/image/icon_user.png"
+        "pagePath": "pages/setting/setting",
+        "text": "我"
       }
     ]
   },
-  "usingComponents": {}
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }
