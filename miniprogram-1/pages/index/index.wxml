@@ -1,30 +1,21 @@
 <!--index.wxml-->
 <view class="timer_container">
-    <view class="timer_main">
-        <view class="timer_time_wrap">
-            <view class="timer_progress_mask"></view>
-            <view class="timer_progress timer_left">
-                <view
-                    class="timer_circle timer_circle_left"
-                    style="transform: rotate({{leftDeg}}deg);"
-                ></view>
-            </view>
-            <view class="timer_progress timer_right">
-                <view
-                    class="timer_circle timer_circle_right"
-                    style="transform: rotate({{rightDeg}}deg);"
-                ></view>
-            </view>
-            <text class="timer_time_value">00:00</text>
-            <text class="timer_task_name">working</text>
-        </view>
-        <input
-            bindinput="changeTaskName"
-            placeholder="自定义任务名"
-            placeholder-style="color:#bfbfbf"
-            type="text"
-            class="timer_inputname"
-        />
+  <view class="timer_main">
+    <view class="timer_time_wrap">
+      <view class="timer_progress_mask"></view>
+      <view class="timer_progress timer_left">
+        <view class="timer_circle timer_circle_left" style="transform: rotate({{leftDeg}}deg);"></view>
+      </view>
+      <view class="timer_progress timer_right">
+        <view class="timer_circle timer_circle_right" style="transform: rotate({{rightDeg}}deg);"></view>
+      </view>
+      <text class="timer_time_value">00:00</text>
+      <text class="timer_task_name">working</text>
     </view>
-    <view class="timer_footer"> footer1 </view>
+    <input bindinput="changeTaskName" placeholder="自定义任务名" placeholder-style="color:#bfbfbf" type="text" class="timer_inputname" />
+  </view>
+  <view class="timer_footer">
+    <view bindtap="startTimer" data-type="work" class="timer_ctrl rest">工作</view>
+    <view bindtap="startTimer" data-type="rest" class="timer_ctrl_2 work">休息</view>
+  </view>
 </view>

@@ -14,6 +14,10 @@ Page({
     })
   },
   changeTaskName: function(e){
-    console.log("changeTaskName: "+e);
+    console.log("changeTaskName: " + e);
+  },
+  startTimer: function(e){
+    let timeType = e.target.dataset.type;
+    console.log("startTimer: " + timeType); 
   }
 })
