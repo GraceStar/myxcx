@@ -2,38 +2,43 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/main/main",
     "pages/todos/todos",
+    "pages/settings/settings",
+    "pages/setting/setting"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "减脂营",
     "navigationBarBackgroundColor": "#ffffff"
   },
-  "debug": true,
   "tabBar": {
-    "custom": true,
-    "selectedColor": "#31869B",
+    "color": "#cdcdcd",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7f7",
     "list": [
       {
-        "current": 0,
-        "pagePath": "pages/bodyRecord/bodyRecord",
-        "text": "身体",
-        "iconPath": "/image/icon_API.png",
-        "selectedIconPath": "/image/icon_API.png"
+        "pagePath": "pages/index/index",
+        "iconPath": "image/yu.png",
+        "selectedIconPath": "image/yu2.png",
+        "text": "专注"
       },
       {
-        "current": 1,
-        "pagePath": "pages/exerciseRecord/exerciseRecord",
-        "text": "运动",
-        "iconPath": "/image/icon_API.png",
-        "selectedIconPath": "/image/icon_API.png"
+        "pagePath": "pages/todos/todos",
+        "iconPath": "image/todo2.png",
+        "selectedIconPath": "image/todo.png",
+        "text": "待办"
+      },
+      {
         "pagePath": "pages/logs/logs",
         "iconPath": "image/jilu.png",
         "selectedIconPath": "image/jilu2.png",
+        "text": "记录"
       },
       {
         "pagePath": "pages/setting/setting",
+        "iconPath": "image/shezhi.png",
+        "selectedIconPath": "image/shezhi2.png",
         "text": "我"
       }
     ]

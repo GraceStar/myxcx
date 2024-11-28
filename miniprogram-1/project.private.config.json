@@ -3,7 +3,5 @@
   "projectname": "miniprogram-1",
   "setting": {
     "compileHotReLoad": true
-          "launchMode": "default",
-          "scene": null
   }
 }
