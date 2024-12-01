@@ -1,17 +1,20 @@
 // app.js
+const defaultTime = {
+  defaultWorkTime: 30,
+  defaultRestTime: 5
+}
+
 App({
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        console.log("wx login:"+res);
-      }
+    let workTime = wx.getStorageSync('workTime');
+    let restTime = wx.getStorageSync('restTime');
+    wx.setStorage({
+      key: 'workTime',
+      data: workTime? workTime: defaultTime.defaultWorkTime
+    });
+    wx.setStorage({
+      key: 'restTime',
+      data: restTime? restTime: defaultTime.defaultRestTime
     })
   },
   globalData: {

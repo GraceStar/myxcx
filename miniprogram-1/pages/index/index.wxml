@@ -9,8 +9,8 @@
       <view class="timer_progress timer_right">
         <view class="timer_circle timer_circle_right" style="transform: rotate({{rightDeg}}deg);"></view>
       </view>
-      <text class="timer_time_value">00:00</text>
-      <text class="timer_task_name">working</text>
+      <text class="timer_time_value">{{remainTimeText}}</text>
+      <text class="timer_task_name">{{taskName}}{{completed ? '已完成！' : '中'}}</text>
     </view>
     <input bindinput="changeTaskName" placeholder="自定义任务名" placeholder-style="color:#bfbfbf" type="text" class="timer_inputname" />
   </view>
